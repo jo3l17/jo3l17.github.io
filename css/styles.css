@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC|Nunito|Rubik&display=swap');
+body{
+    font-family: Nunito , 'Courier New', Courier, monospace;;
+}
+h1, h2 , h3, h4 , h5, h6{
+    font-family:  Rubik ,Arial, Helvetica, sans-serif;
+}
 :root{
     --primary:#136f63;
     --secondary:#22AAA1;
@@ -12,49 +17,56 @@
     margin-right: auto;
 }
 #indexPage .indexHeader{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     min-height: 80px;
     text-align: center;
-    position: relative;
     background-color: var(--primary);
     border-radius: 20px;
 }
+#indexPage .indexHeader .header-container{
+    display: flex;
+    justify-content: center;
+}
 #indexPage{
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 .indexHeader h1{
-    font-family: Rubik ,Arial, Helvetica, sans-serif;
-    color: white
+    color: white;
 }
 #indexPage .indexMain h2{
     padding-left: 20px;
-    font-family: Rubik ,Arial, Helvetica, sans-serif;
+}
+#indexPage .indexMain{
+    padding: .5em;
 }
 #indexPage .indexFooter{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 80px;
+    text-align: center;
+    background-color: var(--primary);
+    border-radius: 20px;
+}
+.footer-content{
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 80px;
-    text-align: center;
-    position: relative;
-    background-color: var(--primary);
-    border-radius: 20px;
 }
 #indexPage .indexFooter span{
     color: white;
-    font-family:  Nunito , 'Courier New', Courier, monospace;
-    margin-top: 6px;
+    /* margin-top: 6px; */
 }
 #profilePicture{
-    position: absolute;
-    top:10px;
-    right: 10px;
-}
-.lessonsList{
-    font-family: Nunito , 'Courier New', Courier, monospace;
+    margin-top: 15px;
 }
 .white{
     color: white;
+}
+#profilePicture{
+    height: 250px;
 }

@@ -1,0 +1,9 @@
+@media(min-width:32.5em){
+    #profilePicture{
+        /* position: absolute;
+        top:10px;
+        right: 10px; */
+        float: right;
+        margin-right: 15px;
+    }
+}
