@@ -4,13 +4,6 @@ body{
 h1, h2 , h3, h4 , h5, h6{
     font-family:  Rubik ,Arial, Helvetica, sans-serif;
 }
-:root{
-    --primary:#136f63;
-    --secondary:#22AAA1;
-    --light:#4CE0D2;
-    --dark:#041b15;
-    --alternative:#84cae7;
-}
 .wrapper{
     max-width: 900px;
     margin-left: auto;
@@ -21,7 +14,7 @@ h1, h2 , h3, h4 , h5, h6{
     justify-content: center; */
     min-height: 80px;
     text-align: center;
-    background-color: var(--primary);
+    background-color: #136f63;;
     border-radius: 20px;
 }
 #indexPage .indexHeader .header-container{
@@ -47,7 +40,7 @@ h1, h2 , h3, h4 , h5, h6{
     /* align-items: center; */
     height: 80px;
     text-align: center;
-    background-color: var(--primary);
+    background-color: #136f63;;
     border-radius: 20px;
 }
 .footer-content{
