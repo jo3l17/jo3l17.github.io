@@ -1,0 +1,101 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Nunito , 'Courier New', Courier, monospace;
+}
+a{
+    font-family: Nunito , 'Courier New', Courier, monospace;
+}
+h1, h2 , h3, h4 , h5, h6{
+    font-family:  Rubik ,Arial, Helvetica, sans-serif;
+}
+
+main, footer{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header-section{
+    text-align: center;
+}
+
+.content-box{
+    margin: 15px 10px 15px 10px;
+    border: 1px #Ccc dashed;
+    padding: 15px;
+}
+
+footer{
+    color: white;
+    height: 80px;
+    line-height: 30px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: #3663a5;
+    border-radius: 20px;
+}
+
+header {
+	background-color: #fff;
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+header img {
+	width: 80px;
+	height: auto;
+}
+
+.heading {
+	display: flex;
+	flex-direction: column;
+}
+
+.heading h1 {
+	font-size: 1.5em;
+	margin: 0 0 0 17px;
+}
+
+.description-title {
+	letter-spacing: 1pt;
+	color:  #29AAE3;
+	margin-left: 17px;
+	font-size: .9rem;
+}
+.white{
+    color: white;
+}
+
+nav {
+    margin: 0 auto;
+    width: 100%;
+	background-color: #3663a5;
+}
+.navLinks {
+	list-style: none;
+	padding: 0;
+}
+.navLinks li:first-child {
+	display: block;
+}
+.navLinks li {
+	display: none;
+}
+.navLinks a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+}
+.navLinks a:hover {
+	color: white;
+	background-color: #29AAE3;
+}
+
+.opened li {
+	display: block;
+}
