@@ -85,7 +85,7 @@ nav {
 }
 .navLinks a {
 	display: block;
-	padding: 0.75rem;
+	padding: 0.75rem 0;
 	text-align: left;
 	text-decoration: none;
 	color: black;
