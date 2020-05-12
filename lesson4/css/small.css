@@ -99,3 +99,6 @@ nav {
 .opened li {
 	display: block;
 }
+.logo{
+	max-width: 150px;
+}
