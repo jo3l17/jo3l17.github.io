@@ -46,6 +46,7 @@ header {
 header img {
 	width: 80px;
 	height: auto;
+	max-width: 150px;
 }
 
 .heading {
@@ -98,7 +99,4 @@ nav {
 
 .opened li {
 	display: block;
-}
-.logo{
-	max-width: 150px;
 }
