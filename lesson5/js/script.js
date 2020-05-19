@@ -21,7 +21,7 @@ hambutton.addEventListener('click', () => {
 }, false);
 var counter = today.getDay()
 for (let i = 0; i < 5; i++) {
-    var cell = document.createElement('td')
+    var cell = document.createElement('th')
     cell.innerHTML=forecastArrayDays[counter]
     if(counter==6){
         counter=0

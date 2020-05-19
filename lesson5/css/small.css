@@ -172,7 +172,7 @@ nav {
 #forecastDays{
 	background-color: #f9b03d;
 }
-#forecastDays td{
+#forecastDays td,#forecastDays th{
 	padding: 8px;
 }
 .article{
