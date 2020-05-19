@@ -67,7 +67,7 @@ header img {
 
 .description-title {
 	letter-spacing: 1pt;
-	color:  #29AAE3;
+	color:  #3663a5;
 	margin-left: 17px;
 	font-size: .9rem;
 }
@@ -95,11 +95,10 @@ nav {
 	display: block;
 	padding: 0.75rem 0;
 	text-decoration: none;
-	color: black;
+	color: white;
 	font-weight: 700;
 }
 .navLinks a:hover {
-	color: white;
 	background-color: #29AAE3;
 }
 .navLinks a.active{
