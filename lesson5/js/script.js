@@ -8,6 +8,7 @@ const mainnav = document.getElementById('main_nav');
 const forecastDays = document.getElementById("forecastDays");
 const message = document.getElementById("message");
 var forecastArrayDays=['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+forecastDays.innerHTML=''
 
 hambutton.addEventListener('click', () => {
     if(mainnav.classList.value=='navLinks'){
