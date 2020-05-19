@@ -230,3 +230,6 @@ nav {
 	background-color: #f7941f;
 	padding: 20px;
 }
+.map_contact_box{
+	display: none;
+}

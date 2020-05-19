@@ -41,5 +41,7 @@
 	.article_content{
 		margin-right: 290px;
 	}
-	
+	.map_contact_box{
+		display: block;
+	}
 }
