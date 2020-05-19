@@ -21,12 +21,12 @@ hambutton.addEventListener('click', () => {
 var counter = today.getDay()
 for (let i = 0; i < 5; i++) {
     var cell = document.createElement('td')
+    cell.innerHTML=forecastArrayDays[counter]
     if(counter==6){
         counter=0
     }else{
         counter++
     }
-    cell.innerHTML=forecastArrayDays[counter]
     forecastDays.appendChild(cell)
 }
 if(counter==5){
