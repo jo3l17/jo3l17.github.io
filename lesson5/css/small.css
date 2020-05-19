@@ -99,9 +99,11 @@ nav {
 	font-weight: 700;
 }
 .navLinks a:hover {
+	color: black;
 	background-color: #29AAE3;
 }
 .navLinks a.active{
+	color: black;
 	background-color: #29AAE3;
 }
 
