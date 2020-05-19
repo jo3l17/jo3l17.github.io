@@ -210,7 +210,7 @@ nav {
 }
 .map_contact_box{
 	padding: 8px;
-	width: 100%;
+	max-width: 100%;
 }
 .contact_content{
 	padding: 15px;
