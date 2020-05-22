@@ -30,7 +30,7 @@ for (let i = 0; i < 5; i++) {
     }
     forecastDays.appendChild(cell)
 }
-if(counter==5){
+if(today.getDay()==5){
     message.style.display='block'
 }else[
     message.style.display='none'
