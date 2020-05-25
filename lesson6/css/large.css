@@ -1,0 +1,28 @@
+@media only screen and (min-width: 60em) {
+    .banner_img{
+        max-height: 400px;
+    }
+    .weather_summary{
+        padding: 15px;
+        left: 20px;
+	    top: 20px;
+    }
+    .forecast{
+        display: block;
+    }
+    .map_contact_box{
+		float: left;
+		padding: 8px;
+		width: 50%;
+    }
+    .map_contact{
+        height: 180px;
+        object-fit: cover;
+    }
+    .contact_info ul{
+        margin: 0 auto;
+        text-align: left;
+        padding-left: 15px;
+        width: initial;
+    }
+}
