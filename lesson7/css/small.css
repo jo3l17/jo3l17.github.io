@@ -233,3 +233,17 @@ nav {
 .map_contact_box{
 	display: none;
 }
+.gallery {
+	margin: 1rem auto;
+	display:grid;
+	grid-template-columns: 1fr; 
+	max-width: 1048px;
+}
+.gallery img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+}
+.gallery figure{
+	text-align: center;
+}

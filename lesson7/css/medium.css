@@ -43,4 +43,8 @@
 	.map_contact_box{
 		display: block;
 	}
+	.gallery {
+        grid-template-columns: 1fr 1fr; 
+        max-width: 1048px;
+    }
 }

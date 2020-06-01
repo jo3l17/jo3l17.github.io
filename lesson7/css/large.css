@@ -25,4 +25,19 @@
         padding-left: 15px;
         width: initial;
     }
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr; 
+        max-width: 1048px;
+    }
+    .gallery figure:hover {
+        box-shadow: 1px 1px 8px 5px #29AAE3;
+    }
+    .gallery img[data-src] {
+        filter: blur(0.2em);
+    }
+      
+    .gallery img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
 }
