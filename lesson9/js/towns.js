@@ -8,7 +8,6 @@ fetch(urlRequest).then(res => res.json()).then((objJson => {
     });
     for (let i = 0; i < filteredTowns.length; i++) {
         const element = filteredTowns[i];
-        console.log(element)
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
         let description = document.createElement('span');
