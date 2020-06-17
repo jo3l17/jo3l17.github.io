@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joel Valdez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/atmosphereLiveapp.ico">
+    <title>Home Page | AtmosphereLive</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <meta name="description" content="Home | AtmosphereLive.app">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/300x400.png" data-src="images/AtmosphereLiveApp.png" class="logo" alt="The world logo">
+        </picture>
+        <section class="heading">
+            <h1>AtmosphereLive</h1>
+            <div class="description-title">Atmosphere in real time</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navLinks" id="main_nav">
+            <li><a id="menu_button" href="#">&#9776; Menu</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="preston-9.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Wheater News</h2>
+            <div class="banner">
+                <img src="images/300x400.png" data-src="images/bannerHome.jpg" alt="banner home">
+                <div class="box">
+                    <h3>Weather in your city</h3>
+                    <p>Enjoy a beautiful sky, all the week , ther will be sunny all days,
+                        enjoy with your family during this summer vacations, subscribe to our newsletter to receive
+                        daily updates of your favorite places.</p>
+                </div>  
+            </div>
+        </section>
+        <div class="cards"></div>
+    </main>
+    <footer>
+        <div>
+            <span>
+                © 2020 | Joel Valdez | Perú | <a class="white" href="https://www.byui.edu/online">BYUI Online
+                    Learning</a>
+            </span>
+            <br>
+            <span id="date">
+            </span>
+        </div>
+    </footer>
+    <script src="js/navMenu_footerDate.js"></script>
+    <script src="js/towns.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans',
+                    'Nunito',
+                    'Rubik'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

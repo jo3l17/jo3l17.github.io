@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joel Valdez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/atmosphereLiveapp.ico">
+    <title>AtmosphereLive | Preston</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <meta name="description" content="Preston | AtmosphereLive.app">
+</head>
+
+<body>
+    <aside id="message">
+        <span>
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </span>
+    </aside>
+    <header>
+        <picture>
+            <img src="images/AtmosphereLiveApp.png" class="logo" alt="The world logo">
+        </picture>
+        <section class="heading">
+            <h1>AtmosphereLive</h1>
+            <div class="description-title">Atmosphere in real time</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navLinks" id="main_nav">
+            <li><a id="menu_button" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="preston-9.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 class="header-section">
+                Preston
+            </h2>
+            <div class="content-box">
+                <picture>
+                    <source media="(max-width: 32.5em)" srcset="images/wdd230_image_small.jpg">
+                    <source media="(max-width: 56em)" srcset="images/wdd230_image_medium.jpg">
+                    <img class="banner_img" src="images/wdd230_image_large.jpg" alt="Preston Landscape">
+                </picture>
+                <div class="weather_summary">
+                    <h3 class="weather_summary_title">
+                        Weather Summary
+                    </h3>
+                    <hr class="divider">
+                    <ul class="summary_list">
+                        <li class="summary_list_item">
+                            <div class="description_summary">Currently:</div>
+                            <div class="value_summary">Sunny</div>
+                        </li>
+                        <li class="summary_list_item">
+                            <div class="description_summary" >High:</div>
+                            <div class="value_summary" ><span id="high_temperature">48</span> °F</div>
+                        </li>
+                        <li class="summary_list_item">
+                            <div class="description_summary">Wind Chill:</div>
+                            <div class="value_summary"><span id="wind_chill"></span> °F</div>
+                        </li>
+                        <li class="summary_list_item">
+                            <div class="description_summary">Humidity:</div>
+                            <div class="value_summary">50%</div>
+                        </li>
+                        <li class="summary_list_item">
+                            <div class="description_summary">Wind Speed:</div>
+                            <div class="value_summary"><span id="wind_speed">6</span> mph</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-box forecast">
+                <h3>5 day Forecast</h3>
+                <table id="forecast-table">
+                    <thead>
+                        <tr id="forecastDays">
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="images/forecast-sun.png" alt="forecast image day 1">
+                                <br>
+                                <span>76 °F</span>
+                            </td>
+                            <td>
+                                <img src="images/forecast-sun.png" alt="forecast image day 2">
+                                <br>
+                                <span>
+                                    70 °F
+                                </span>
+                            </td>
+                            <td>
+                                <img src="images/forecast-clouds.png" alt="forecast image day 3">
+                                <br>
+                                <span>
+                                    50 °F
+                                </span>
+                            </td>
+                            <td>
+                                <img src="images/forecast-sun.png" alt="forecast image day 4">
+                                <br>
+                                <span>
+                                    74 °F
+                                </span>
+                            </td>
+                            <td>
+                                <img src="images/forecast-sun.png" alt="forecast image day 5">
+                                <br>
+                                <span>
+                                    73 °F
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="content-box article">
+                <img class="article_img" src="images/article.jpg" alt="">
+                <div class="article_title">
+                    <h3>Article Title</h3>
+                    <span>By Author</span>
+                </div>
+                <p class="article_content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, error. Beatae, quas ratione
+                    officia voluptate deserunt doloribus illum aliquid. Itaque libero voluptas illum nostrum esse
+                    corrupti nihil reiciendis. Possimus, laudantium!
+
+                </p>
+            </div>
+            <div class="content-box contact_info">
+                <div class="contact_content">
+                    <ul>
+                        <li>
+                            <h4>Atmosphere Live</h4>
+                        </li>
+                        <li>
+                            <img src="images/marker.png" alt="location">
+                            <span>
+                                30 N 1st E Preston, ID 83263
+                            </span>
+                        </li>
+                        <li>
+                            <img src="images/phone.png" alt="phone">
+                            <span>
+                                953 945 798
+                            </span>
+                        </li>
+                        <li>
+                            <img src="images/mail.png" alt="mail">
+                            <span>
+                                AtmosphereLive@news.com
+                            </span>
+                        </li>
+                        <li class="social_links">
+                            <img src="images/facebook.png" alt="social_facebook">
+                            <img src="images/youtube.png" alt="social_youtube">
+                            <img src="images/intagram.png" alt="social_instagram">
+                            <img src="images/twitter.png" alt="social_twitter">
+                        </li>
+                    </ul>
+                    <div class="map_contact_box">
+                        <iframe class="map_contact"
+                            src="https://maps.google.com/maps?hl=en&amp;coord=42.0963133,-111.8766173&amp;q=Preston%2C%20ID%2083263+(WeatherTheWeather)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed"></iframe>
+                        <!-- <img class="map_contact" src="images/map-contact.png" alt="map_contact"> -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <span>
+                © 2020 | Joel Valdez | Perú | <a class="white" href="https://www.byui.edu/online">BYUI Online
+                    Learning</a>
+            </span>
+            <br>
+            <span id="date">
+            </span>
+        </div>
+    </footer>
+    <script src="js/navMenu_footerDate.js"></script>
+    <script src="js/table_forecast.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans',
+                    'Nunito',
+                    'Rubik'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

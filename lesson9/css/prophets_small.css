@@ -33,10 +33,9 @@ footer{
 }
 .cards img {
 	display: block;
-    width: 160px;
-    height: 205px;
-    margin: auto auto 5px auto;
-    box-shadow: rgb(49, 49, 49) 0 0 15px;
+    width: 170px;
+    margin: 15px auto 15px auto;
+    box-shadow: black 0 0 25px;
 }
 .cards section{
     text-align: center;
@@ -49,8 +48,4 @@ footer{
 }
 .cards p{
     margin: 0;
-}
-.cards img{
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
