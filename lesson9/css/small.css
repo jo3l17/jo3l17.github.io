@@ -361,3 +361,9 @@ form input.submitButton:hover{
 	background-color: #F9B03D;
 	border-radius: 10px;
 }
+/* link wireframes */
+.link_wireframes{
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
