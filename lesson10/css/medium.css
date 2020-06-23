@@ -1,0 +1,98 @@
+@media only screen and (min-width: 32.5em) {
+	/* header */
+	header img {
+		width: 100%;
+	}
+	.heading h1 {
+		font-size: 2rem;
+	}
+	.description-title  {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+    }
+    .navLinks {
+		display: flex;
+	}
+	.navLinks li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navLinks a {
+		text-align: center;
+	}
+	.navLinks li:first-child {
+		display: none;
+	}
+	/* preston-page */
+	.banner_img{
+		width: 100%;
+		object-fit: cover;
+	}
+	.forecast{
+		display: block;
+	}
+	.article_img{
+		float: right;
+		width: 280px;
+	}
+	.article_content{
+		margin-right: 290px;
+	}
+	.map_contact_box{
+		display: block;
+	}
+	/* gallery */
+	.gallery {
+        grid-template-columns: 1fr 1fr; 
+        max-width: 1048px;
+	}
+	/* home */
+	.banner .box{
+		position: absolute;
+		height: 220px;
+		max-width: 280px;
+		right: 0;
+		top: 0;
+		padding: 15px;
+		text-align: justify;
+		color: white;
+		background-color: rgba(54, 99, 165,.7);
+	}
+	.cards section {
+		display: flex;
+		flex-direction: row;
+		height: 350px;
+	}
+	  
+	.cards section:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+
+	.cards section>div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		width: 50%;
+	}
+	.cards img{
+		width: 50%;
+		height: 90%;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.cards h2{
+		margin-top: 0;
+	}
+	.banner .box{
+		height: 220px;
+		right: 0;
+		top: 0;
+		padding: 15px;
+		text-align: justify;
+		color: white;
+		background-color: rgba(54, 99, 165,.7);
+	}
+}
+
