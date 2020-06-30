@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joel Valdez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/atmosphereLiveapp.ico">
+    <title>AtmosphereLive | Preston</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <meta name="description" content="Preston | AtmosphereLive.app">
+</head>
+
+<body>
+    <aside id="message">
+        <span>
+            Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </span>
+    </aside>
+    <header>
+        <picture>
+            <img src="images/AtmosphereLiveApp.png" class="logo" alt="AtmosphereLive logo">
+        </picture>
+        <section class="heading">
+            <h1>AtmosphereLive</h1>
+            <div class="description-title">Atmosphere in real time</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navLinks" id="main_nav">
+            <li><a id="menu_button" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a class="active" href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 class="header-section">
+                Soda Springs
+            </h2>
+            <div class="content-box">
+                <picture>
+                    <source media="(max-width: 32.5em)" srcset="images/sodasprings_small.jpg">
+                    <source media="(max-width: 56em)" srcset="images/sodasprings_medium.jpg">
+                    <img class="banner_img" data-src="images/sodasprings_large.jpg" src="images/300x400.png" alt="Soda Springs Landscape">
+                </picture>
+                <div class="weather_summary">
+                    <h3 class="weather_summary_title">
+                        Weather Summary
+                    </h3>
+                    <hr class="divider">
+                    <ul class="summary_list">
+                        <li class="summary_list_item">
+                            <div class="description_summary">Currently:</div>
+                            <div class="value_summary" id="currently">Sunny</div>
+                        </li>
+                        <li class="summary_list_item">
+                            <div class="description_summary">High:</div>
+                            <div class="value_summary"><span id="high_temperature">48</span> °F</div>
+                        </li>
+                        <li class="summary_list_item">
+                            <div class="description_summary">Wind Chill:</div>
+                            <div class="value_summary"><span id="wind_chill"></span></div>
+                        </li>
+                        <li class="summary_list_item">
+                            <div class="description_summary">Humidity:</div>
+                            <div class="value_summary"><span id="humidity"></span>%</div>
+                        </li>
+                        <li class="summary_list_item">
+                            <div class="description_summary">Wind Speed:</div>
+                            <div class="value_summary"><span id="wind_speed"></span> mph</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-box forecast">
+                <h3>5 day Forecast</h3>
+                <table id="forecast-table">
+                    <thead>
+                        <tr id="forecastDays">
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="forecast_prediction">
+                            <td>
+                                <img src="images/forecast-sun.png" alt="forecast image day 1">
+                                <br>
+                                <span>76 °F</span>
+                            </td>
+                            <td>
+                                <img src="images/forecast-sun.png" alt="forecast image day 2">
+                                <br>
+                                <span>
+                                    70 °F
+                                </span>
+                            </td>
+                            <td>
+                                <img src="images/forecast-clouds.png" alt="forecast image day 3">
+                                <br>
+                                <span>
+                                    50 °F
+                                </span>
+                            </td>
+                            <td>
+                                <img src="images/forecast-sun.png" alt="forecast image day 4">
+                                <br>
+                                <span>
+                                    74 °F
+                                </span>
+                            </td>
+                            <td>
+                                <img src="images/forecast-sun.png" alt="forecast image day 5">
+                                <br>
+                                <span>
+                                    73 °F
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="upcoming_events">
+                <h3>Upcoming Events</h3>
+                <div id="events"></div>
+            </div>
+            <div class="content-box article">
+                <picture>
+                    <source media="(max-width: 32.5em)" srcset="images/sodasprings_article_small.jpg">
+                    <source media="(max-width: 56em)" srcset="images/sodasprings_article_medium.jpg">
+                    <img class="article_img" src="images/sodasprings_article_large.jpg" alt="Soda Springs article image">
+                </picture>
+                <div class="article_title">
+                    <h3>Soda Springs residents prepare for spring snowstorm</h3>
+                    <span>By Kevin Johns</span>
+                </div>
+                <p class="article_content">
+                    SODA SPRINGS, Calif. — After already enduring one of the most brutal winters in the last decade,
+                    residents of Soda Springs now have to brace for a spring snowstorm!
+
+                    As much as 24 inches of snow could fall in the Sierra Nevada over the next couple days.
+
+                    "It's really difficult to describe," said Soda Springs resident, Barbara Fitterer. "When you tell
+                    people, nobody believes it. The snow is above your window and it's black. You're dark all winter.
+                    It's a very strange experience."
+                    Fitterer has lived in Soda Springs the last 10 years and has never seen anything like this. Now that
+                    the snow is expected to be here by early Thursday morning, she realizes she has to make some
+                    decisions.
+
+                    "It's fight or flight all the time. Do we stay? Do we shovel it? Do we shut down the house? Do we go
+                    to Reno and gamble? And that's the debate today," Fitterer told ABC10.
+
+                    Other residents are in disbelief that they're expected to receive this much snow in the middle of
+                    May.
+
+                    "I was surprised," Chris Holcomb said. "Usually. I get to point where I stop looking at the weather.
+                    But the boss man told me that we have 4 to 8 inches coming in, and now it's up to a foot, possibly."
+
+                    While some residents will flee the area, others plan to stick it out.
+
+                    "We just have to cope and deal with it. Traffic is never fun. That's the worst part of the storm.
+                    But, yeah, we just endure and keep pushing through," said Holcomb.
+                    <br>
+                    <a
+                        href="https://www.abc10.com/article/news/soda-springs-residents-prepare-for-yet-another-snowstorm/103-3be0901f-87d5-438e-b3e0-bfadb57f9415">Read
+                        more...</a>
+                </p>
+            </div>
+            <div class="content-box contact_info">
+                <div class="contact_content">
+                    <ul>
+                        <li>
+                            <h4>Atmosphere Live</h4>
+                        </li>
+                        <li>
+                            <img src="images/marker.png" alt="location">
+                            <span>
+                                30 N 1st E Preston, ID 83263
+                            </span>
+                        </li>
+                        <li>
+                            <img src="images/phone.png" alt="phone">
+                            <span>
+                                953 945 798
+                            </span>
+                        </li>
+                        <li>
+                            <img src="images/mail.png" alt="mail">
+                            <span>
+                                AtmosphereLive@news.com
+                            </span>
+                        </li>
+                        <li class="social_links">
+                            <img src="images/facebook.png" alt="social_facebook">
+                            <img src="images/youtube.png" alt="social_youtube">
+                            <img src="images/intagram.png" alt="social_instagram">
+                            <img src="images/twitter.png" alt="social_twitter">
+                        </li>
+                    </ul>
+                    <div class="map_contact_box">
+                        <iframe class="map_contact"
+                            src="https://maps.google.com/maps?&amp;height=600&amp;hl=en&amp;coord=42.6543652,-111.6046687&amp;q=Soda%20Springs+83276+(AtmosphereLive)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed"></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <div class="weatherBy">
+                Weather by : <a href="https://openweathermap.org">OpenWeatherMap.org</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <span>
+                © 2020 | Joel Valdez | Perú | <a class="white" href="https://www.byui.edu/online">BYUI Online
+                    Learning</a>
+            </span>
+            <br>
+            <span id="date">
+            </span>
+        </div>
+    </footer>
+    <script src="js/navMenu_footerDate.js"></script>
+    <script src="js/table_forecast.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/fillpage.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans',
+                    'Nunito',
+                    'Rubik'
+                ]
+            }
+        });
+        fillPage(5607916, "Soda Springs");
+    </script>
+</body>
+
+</html>

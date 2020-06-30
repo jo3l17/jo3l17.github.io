@@ -1,0 +1,71 @@
+@media only screen and (min-width: 60em) {
+    /* preston-page */
+    .banner_img{
+        max-height: 400px;
+    }
+    .weather_summary{
+        padding: 15px;
+        left: 20px;
+	    top: 20px;
+    }
+    .forecast{
+        display: block;
+    }
+    .map_contact_box{
+		float: left;
+		padding: 8px;
+		width: 50%;
+    }
+    .article_img{
+        float: right;
+		width: 280px;
+	}
+    .map_contact{
+        height: 180px;
+        object-fit: cover;
+    }
+    .contact_info ul{
+        margin: 0 auto;
+        text-align: left;
+        padding-left: 15px;
+        width: initial;
+    }
+    /* gallery */
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr; 
+        max-width: 1048px;
+    }
+    .gallery figure:hover {
+        box-shadow: 1px 1px 8px 5px #29AAE3;
+    }
+    .gallery img[data-src] {
+        filter: blur(0.2em);
+    }
+      
+    .gallery img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+    /* cards */
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .cards h2{
+        margin-top: 20px;
+    }
+    .cards img{
+        height: 300px;
+        width: 80%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+    .cards section{
+        height: auto;
+        display: block;
+    }
+    .cards section>div{
+		width: 100%;
+	}
+}

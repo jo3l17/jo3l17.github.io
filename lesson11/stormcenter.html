@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joel Valdez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/atmosphereLiveapp.ico">
+    <title>AtmosphereLive | Storm Center</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <meta name="description" content="Storm Center | AtmosphereLive.app">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <img src="images/AtmosphereLiveApp.png" class="logo" alt="AtmosphereLive logo">
+        </picture>
+        <section class="heading">
+            <h1>AtmosphereLive</h1>
+            <div class="description-title">Atmosphere in real time</div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navLinks" id="main_nav">
+            <li><a id="menu_button" href="#">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Report a Storm</h2>
+        <form action="thanks.html" method="get">
+            <fieldset>
+                <legend>
+                    Your Information
+                </legend>
+                <label class="top_label" for="name">
+                    Name*:
+                    <input type="text" name="name" id="name" required pattern="^[a-zA-Z\s.-]{3,}$" title="Please write at least 3 characters">
+                </label>
+                <label class="top_label" for="phone">
+                    Phone Number*:
+                    <input type="tel" name="phone" id="phone" required pattern="[0-9]{10,}" title="Please write at least 10 numbers">
+                </label>
+                <label class="top_label" for="zipCode">
+                    Zip Code*:
+                    <input type="number" name="zipCode" id="zipCode" required>
+                </label>
+                <label class="top_label" for="email">
+                    Email:
+                    <input type="email" name="email" id="email" placeholder="johnDoe@gmail.com">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Storm Information
+                </legend>
+                <label class="inline_label" for="stormDate">
+                    Storm Date:
+                    <input type="date" name="stormDate" id="stormDate">
+                </label>
+                <label class="inline_label" for="stormType">
+                    Storm Type:
+                    <input list="stormTypes" name="stormType" id="stormType">
+                    <datalist id="stormTypes">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
+                <label class="inline_label" for="stormSeverity">
+                    Storm Severity:
+                    <input type="range" name="stormSeverity" id="stormSeverity" min="1" max="10" step="1" value="5"
+                        oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                    <span id="stormSeverityValue">5</span>
+                </label>
+                <label class="inline_label" for="stormRegion">
+                    Storm Region:
+                    <select name="stormRegion" id="stormRegion">
+                        <option selected disabled>Select Region...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="SodaSprings">Soda Springs</option>
+                        <option value="FishHaven">Fish Haven</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Other Information</legend>
+                <div>User in-danger level:</div>
+                <label class="inline_label" for="danger_yes">
+                    <input type="radio" id="danger_yes" name="danger_level" value="yes" checked>
+                    <span>yes</span>
+                </label>
+                <label class="inline_label" for="danger_maybe">
+                    <input type="radio" id="danger_maybe" name="danger_level" value="maybe">
+                    <span>maybe</span>
+                </label>
+                <label class="inline_label" for="danger_no">
+                    <input type="radio" id="danger_no" name="danger_level" value="no">
+                    <span>no</span>
+                </label>
+                <label class="top_label" for="comments_field">
+                    Comments:
+                    <textarea name="comments" id="comments_field" cols="30" rows="6"></textarea>
+                </label>
+            </fieldset>
+                <input class="submitButton" type="submit" value="Report the Storm">
+        </form>
+    </main>
+    <footer>
+        <div>
+            <span>
+                © 2020 | Joel Valdez | Perú | <a class="white" href="https://www.byui.edu/online">BYUI Online
+                    Learning</a>
+            </span>
+            <br>
+            <span id="date">
+            </span>
+        </div>
+    </footer>
+    <script src="js/navMenu_footerDate.js"></script>
+    <script src="js/stormRating.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans',
+                    'Nunito',
+                    'Rubik'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

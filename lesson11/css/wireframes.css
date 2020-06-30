@@ -1,0 +1,9 @@
+main{
+    max-width: 990px;
+}
+img{
+    max-width: 100%;
+    display: block;
+    margin: 30px auto;
+    border: 1px solid black;
+}

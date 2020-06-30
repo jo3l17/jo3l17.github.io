@@ -20,7 +20,7 @@ fetch(forecastURL)
         for (let i = 0; i < forecastTableData.length; i++) {
             var cell = document.createElement('td');
             var img = document.createElement("img");
-            img.setAttribute('src','https://openweathermap.org/img/w/' + forecastTableData[i].weather[0].icon + '.png');
+            img.setAttribute('src','https://openweathermap.org/img/wn/' + forecastTableData[i].weather[0].icon + '.png');
             img.setAttribute('alt',forecastTableData[i].weather[0].description)
             var br = document.createElement("br");
             var span = document.createElement("span");
