@@ -2,10 +2,12 @@ const urlRequest = "https://byui-cit230.github.io/weather/data/towndata.json";
 fetch(urlRequest).then(res => res.json()).then((objJson => {
     const towns = objJson['towns'];
     const filteredTowns = towns.filter((town) => {
-        if (town.name == "Fish Haven" || town.name == "Preston" || town.name == "Soda Springs") {
+        if (town.name == "Preston" || town.name == "Fish Haven" || town.name == "Soda Springs") {
             return town
         }
     });
+    filteredTowns.sort((a,b) => (a.currentPopulation > b.currentPopulation) ? 1 : ((b.currentPopulation > a.currentPopulation) ? -1 : 0)); 
+    filteredTowns.reverse();
     for (let i = 0; i < filteredTowns.length; i++) {
         const element = filteredTowns[i];
         let card = document.createElement('section');
