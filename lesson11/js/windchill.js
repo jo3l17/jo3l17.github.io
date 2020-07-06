@@ -11,3 +11,4 @@ const windChill = () => {
         wind_chill.innerHTML = Math.round(f) + ' °F';
     }
 }
+console.log(Math.pow(73837851721338905,1/16))
