@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joel Valdez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/scoots_icon.ico">
+    <title>Home | Scoots</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Home | Scoots">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <picture>
+                <source media="(max-width: 32.5em)" srcset="images/logo_scoots_to_icon.png">
+                <img src="images/logo_scoots_web.png" class="site_logo" alt="scoots logo">
+            </picture>
+        </a>
+        <section>
+            <h1>Scoots</h1>
+            <span>easy rent, easy life</span>
+        </section>
+    </header>
+    <nav>
+        <div class="desktop-nav-container">
+            <div class="nav-menu-container">
+                <span class="nav-menu-item">
+                    <a class="active" href="index.html">Home</a>
+                </span>
+                <span class="nav-menu-item">
+                    <a href="#">
+                        Rentals
+                    </a>
+                </span>
+                <span class="nav-menu-item">
+                    <a href="#">
+                        Reservations
+                    </a>
+                </span>
+                <span class="nav-menu-item">
+                    <a href="#">
+                        Tours
+                    </a>
+                </span>
+                <span class="nav-menu-item">
+                    <a href="#">
+                        Contact
+                    </a>
+                </span>
+            </div>
+
+            <span class="hamburger-btn">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+
+        <div class="collapsed-nav-container"></div>
+    </nav>
+    <main>
+        <section class="inner_section">
+            <div class="banner">
+                <picture>
+                    <source media="(max-width: 32.5em)" srcset="images/banner_small.jpg">
+                    <source media="(max-width: 60em)" srcset="images/banner_medium.jpg">
+                    <img src="images/banner_large.jpg" class="img_banner_home" alt="banner Home">
+                </picture>
+                <div class="call_to_action">
+                    <h3>Easy rent</h3>
+                    <span>
+                        Scoots is the best rental service in island of Cozumel off the coast of Mexico in the western
+                        Caribbean Sea
+                    </span>
+                    <br>
+                    <a class="btn btn_secondary" href="#Rentals">
+                        Rent!!!
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="inner_section no_pd_top">
+            <h2 class="section_header">
+                Weather and forecast
+            </h2>
+            <div class="forecast_weather_container">
+                <div class="weather_summary">
+                    <h3 class="weather_summary_title">
+                        Weather Summary
+                    </h3>
+                    <hr class="divider">
+                    <ul class="summary_list">
+                        <li>
+                            <div class="description_summary">Currently:</div>
+                            <div class="value_summary" id="currently">Sunny</div>
+                        </li>
+                        <li>
+                            <div class="description_summary">High:</div>
+                            <div class="value_summary"><span id="high_temperature">48</span> °F</div>
+                        </li>
+                        <li>
+                            <div class="description_summary">Wind Chill:</div>
+                            <div class="value_summary"><span id="wind_chill">48</span></div>
+                        </li>
+                        <li>
+                            <div class="description_summary">Humidity:</div>
+                            <div class="value_summary"><span id="humidity">6</span>%</div>
+                        </li>
+                        <li>
+                            <div class="description_summary">Wind Speed:</div>
+                            <div class="value_summary"><span id="wind_speed">6</span> mph</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="forecast">
+                    <h3 class="weather_summary_title">5 day Forecast</h3>
+                    <hr>
+                    <table id="forecast_table">
+                        <thead>
+                            <tr id="forecastDays">
+                                <th>mon</th>
+                                <th>tue</th>
+                                <th>wed</th>
+                                <th>thu</th>
+                                <th>fri</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="forecast_prediction">
+                                <td>
+                                    <img src="images/Scoots.png" alt="forecast image day 1">
+                                    <br>
+                                    <span>76 °F</span>
+                                </td>
+                                <td>
+                                    <img src="images/Scoots.png" alt="forecast image day 2">
+                                    <br>
+                                    <span>
+                                        70 °F
+                                    </span>
+                                </td>
+                                <td>
+                                    <img src="images/Scoots.png" alt="forecast image day 3">
+                                    <br>
+                                    <span>
+                                        50 °F
+                                    </span>
+                                </td>
+                                <td>
+                                    <img src="images/Scoots.png" alt="forecast image day 4">
+                                    <br>
+                                    <span>
+                                        74 °F
+                                    </span>
+                                </td>
+                                <td>
+                                    <img src="images/Scoots.png" alt="forecast image day 5">
+                                    <br>
+                                    <span>
+                                        73 °F
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="inner_section no_pd_top" id="Rentals">
+            <h2 class="section_header">Rentals</h2>
+            <div class="rentals_summary">
+                <div class="summary_block">
+                    <div id="scooter_rent" class="inner_summary_block">
+                        <h3>
+                            motor scooters
+                        </h3>
+                        <span>
+                            The motor scooter are the best opportunity to begin your adventure,
+                            they are the best option to start enjoying the landscape of Cozumel, enjoy everything at a
+                            moderate speed, available to all people, begin with your adventure now.
+                        </span>
+                    </div>
+                    <button class="btn btn_block btn_primary">
+                        Rent a Scooter
+                    </button>
+                </div>
+                <div class="summary_block">
+                    <div id="jeep_rent" class="inner_summary_block">
+                        <h3>
+                            jeeps
+                        </h3>
+                        <span>
+                            Jeeps is the best for long distances, and travel with your friends or family to all the
+                            sites in Cozumel,
+                            If you are looking for a adventure with people Jeeps are your best option
+                        </span>
+                    </div>
+                    <button class="btn btn_block btn_primary">
+                        Rent a Jeep
+                    </button>
+                </div>
+                <div class="summary_block">
+                    <div id="atv_rent" class="inner_summary_block">
+                        <h3>
+                            side-by-sides ATVs
+                        </h3>
+                        <span>
+                            ATVs is the best option to go in all the terrain, you can go to an adventure in the beach,
+                            and enjoy. All motorcycles are maintained to meet strict factory standards providing the
+                            most fun, safe, and affordable riding experience
+                        </span>
+                    </div>
+                    <button class="btn btn_block btn_primary">
+                        Rent a ATV
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_info">
+            <div class="column">
+                <h3>
+                    About Us
+                </h3>
+                <ul class="about_us">
+                    <li>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i> Calle Zaramullo 8, Huertos Familiares, 77673 San
+                            Miguel de Cozumel, Q.R., México
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-phone"></i> +52 987 456 5467
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-envelope"></i> scoots@info.com
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>
+                    Social Links
+                </h3>
+                <ul class="social_links">
+                    <li>
+                        <a href="https://facebook.com">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_last">
+            2020 | Scoots&#174;
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans',
+                    'Nunito',
+                    'Rubik'
+                ]
+            }
+        });
+    </script>
+    <script src="js/windchill.js"></script>
+    <script src="js/weather.js"></script>
+    <script>fillPage(3530103)</script>
+    <script src="js/forecastDays.js"></script>
+</body>
+
+</html>

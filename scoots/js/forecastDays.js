@@ -1,7 +1,6 @@
 var day = new Date()
 var forecastArrayDays=['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 const forecastDays = document.getElementById("forecastDays");
-const message = document.getElementById("message");
 forecastDays.innerHTML=''
 var counter = day.getDay()+1
 if(counter == 7){
@@ -17,8 +16,3 @@ for (let i = 0; i < 5; i++) {
     }
     forecastDays.appendChild(cell)
 }
-if(day.getDay()==5){
-    message.style.display='block'
-}else[
-    message.style.display='none'
-]

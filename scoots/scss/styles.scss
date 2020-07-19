@@ -1,0 +1,16 @@
+@import "normalize";
+
+@import "animations";
+
+@import "variables";
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+@import "small";
+
+@media only screen and (min-width: 32.5em) {
+    @import "medium";
+} /* end of media query */
+@media only screen and (min-width: 60em) {
+    @import "large";
+} /* end of media query */

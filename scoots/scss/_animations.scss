@@ -1,0 +1,14 @@
+@keyframes slideUp {
+    from { transform: translateY(-300px); opacity: 0.2; }
+    to { transform: translateX(0); opacity: 1; }
+}
+@keyframes hamburger-toggle-show {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+@keyframes slideNav {
+    from { height: 0px; }
+    to { 
+        height: calc(100vh - 66px); /* subtract nav's height and padding*/ 
+    }
+}

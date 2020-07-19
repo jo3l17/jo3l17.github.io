@@ -1,0 +1,22 @@
+.img_banner_home{
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+.banner{
+    .call_to_action{
+        padding: 30px;
+        top: 50px;
+        right: 50px;
+    }
+}
+.rentals_summary{
+    flex-direction: row;
+    .summary_block{
+        width: 100%;
+        margin: 0 30px;
+    }
+    .inner_summary_block{
+        height: 250px;
+    }
+}
