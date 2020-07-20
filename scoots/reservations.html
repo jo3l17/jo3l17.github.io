@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joel Valdez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/scoots_icon.ico">
+    <title>Reservations | Scoots</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Reservations | Scoots">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <picture>
+                <source media="(max-width: 32.5em)" srcset="images/logo_scoots_to_icon.png">
+                <img src="images/logo_scoots_web.png" class="site_logo" alt="scoots logo">
+            </picture>
+        </a>
+        <section>
+            <h1>Scoots</h1>
+            <span>easy rent, easy life</span>
+        </section>
+    </header>
+    <nav>
+        <div class="desktop-nav-container">
+            <div class="nav-menu-container">
+                <span class="nav-menu-item">
+                    <a href="index.html">Home</a>
+                </span>
+                <span class="nav-menu-item">
+                    <a href="rentals.html">
+                        Rentals
+                    </a>
+                </span>
+                <span class="nav-menu-item">
+                    <a class="active" href="reservations.html">
+                        Reservations
+                    </a>
+                </span>
+                <span class="nav-menu-item">
+                    <a href="tours.html">
+                        Tours
+                    </a>
+                </span>
+                <span class="nav-menu-item">
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </span>
+            </div>
+
+            <span class="hamburger-btn">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+
+        <div class="collapsed-nav-container"></div>
+    </nav>
+    <main>
+        <h1 class="section_title">Reservations</h1>
+        <div class="reservarion_requirements">
+            <h2>Rental information</h2>
+            <ul>
+                <li>
+                    A $50 security deposit is required to confirm reservations.
+                </li>
+                <li>
+                    A valid drivers license is required in hand at time of rental.
+                </li>
+                <li>
+                    No one under 12 years of age are allowed to ride on the scooters.
+                </li>
+                <li>
+                    Fuel charge not included.
+                </li>
+                <li>
+                    Unlimited mileage.
+                </li>
+                <li>
+                    Liability insurance is free of charge.
+                </li>
+                <li>
+                    Reservations rate requires 24 hour prior notification.
+                </li>
+                <li>
+                    Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
+                </li>
+                <li>
+                    Payment via Google Pay, cash, credit card, debit card, or PayPal.
+                </li>
+                <li>
+                    Rentals may be returned to either location.
+                </li>
+            </ul>
+        </div>
+        <form id="reservation_form" action="thanks.html" method="GET">
+            <fieldset>
+                <legend>Your information</legend>
+                <div class="form_group">
+                    <label class="top_label" for="name">
+                        Name:
+                        <input type="text" name="name" id="name" required pattern="^[a-zA-Z\s.-]{3,}$" title="Please write at least 3 characters">
+                    </label>
+                    <label class="top_label" for="email">
+                        Email:
+                        <input type="email" name="email" id="email" required title="invalid email">
+                    </label>
+                </div>
+                <div class="form_group">
+                    <label class="top_label" for="phone">
+                        Phone number:
+                        <input type="tel" name="phone" id="phone" required pattern="[0-9]{10,}" title="Your phone is invalid">
+                    </label>
+                    <label class="top_label" for="HomeStateCountry">
+                        Home state or country:
+                        <input type="text" name="HomeStateCountry" id="HomeStateCountry" required pattern="^[a-zA-Z\s.-]{5,}$" title="Please write at least 3 characters">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Reservation Info</legend>
+                <div class="form_group">
+                    <label class="top_label" for="date">
+                        Date of reservation:
+                        <input type="date" name="date" id="date" required>
+                    </label>
+                    <label class="top_label" for="period">
+                        Period:
+                        <!-- <input type="date" name="date" id="date" required> -->
+                        <input list="periods" name="period" id="period" required>
+                        <datalist id="periods">
+                            <option value="Half Day">
+                            <option value="Full Day">
+                        </datalist>
+                    </label>
+                </div>
+                <div class="form_group">
+                    <label class="top_label" for="type">
+                        Rental Type:
+                        <select name="rentalType" id="type">
+                            <optgroup label="Honda Motor Scooters">
+                                <option value="honda_metro_scooter">
+                                    Honda Metro Scooter
+                                </option>
+                                <option value="honda_dio_scooter">
+                                    Honda Dio Scooter
+                                </option>
+                                <option value="honda_pcx150_scooter">
+                                    Honda PCX150 Scooter
+                                </option>
+                            </optgroup>
+                            <optgroup label="ATV Side-by-Side">
+                                <option value="honda_pioneer_atv">
+                                    Honda Pioneer ATV
+                                </option>
+                            </optgroup>
+                            <optgroup label="Jeep Rentals">
+                                <option value="jeep_wrangler___4_door_with_a/c">
+                                    Jeep Wrangler - 4 door with a/c
+                                </option>
+                                <option value="jeep_wrangler___2_door">
+                                    Jeep Wrangler - 2 door
+                                </option>
+                            </optgroup>
+                        </select>
+                    </label>
+                    <label for="number" class="top_label">
+                        Number:
+                        <input type="number" name = "number" id="number" required>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Others</legend>
+                <label class="top_label100" for="comments">
+                    Comments:
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </label>
+            </fieldset>
+            <div class="submit_container">
+                <button type="submit" class="btn btn_primary">Send my Reservation</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer_info">
+            <div class="column">
+                <h3>
+                    About Us
+                </h3>
+                <ul class="about_us">
+                    <li>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i> Calle Zaramullo 8, Huertos Familiares, 77673 San
+                            Miguel de Cozumel, Q.R., México
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-phone"></i> +52 987 456 5467
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-envelope"></i> scoots@info.com
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>
+                    Social Links
+                </h3>
+                <ul class="social_links">
+                    <li>
+                        <a href="https://facebook.com">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_last">
+            2020 | Scoots&#174;
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans',
+                    'Nunito',
+                    'Rubik'
+                ]
+            }
+        });
+    </script>
+    <script src="js/reservations.js"></script>
+</body>
+
+</html>

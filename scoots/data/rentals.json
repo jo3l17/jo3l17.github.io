@@ -1,0 +1,97 @@
+{
+    "rentals": [
+        {
+            "type": "Honda Motor Scooters",
+            "content": [
+                {
+                    "rentalType": "Honda Metro Scooter",
+                    "img": "honda_metropolitan_wikimedia",
+                    "maxPersons": 1,
+                    "reservation": {
+                        "halfDay": 20,
+                        "fullDay": 30
+                    },
+                    "walkIn": {
+                        "halfDay": 25,
+                        "fullDay": 35
+                    }
+                },
+                {
+                    "rentalType": "Honda Dio Scooter",
+                    "img": "honda_dio_wikimedia",
+                    "maxPersons": 2,
+                    "reservation": {
+                        "halfDay": 30,
+                        "fullDay": 40
+                    },
+                    "walkIn": {
+                        "halfDay": 35,
+                        "fullDay": 45
+                    }
+                },
+                {
+                    "rentalType": "Honda PCX150 Scooter",
+                    "img": "honda_pcx150_wikimedia",
+                    "maxPersons": 2,
+                    "reservation": {
+                        "halfDay": 40,
+                        "fullDay": 50
+                    },
+                    "walkIn": {
+                        "halfDay": 45,
+                        "fullDay": 55
+                    }
+                }
+            ]
+        },
+        {
+            "type": "ATV Side-by-Side",
+            "content":[
+                {
+                    "rentalType":"Honda Pioneer ATV",
+                    "img":"honda_pioneer_flickr",
+                    "maxPersons":4,
+                    "reservation":{
+                        "halfDay":50,
+                        "fullDay":70
+                    },
+                    "walkIn":{
+                        "halfDay":60,
+                        "fullDay":80
+                    }
+                }
+            ]
+        },
+        {
+            "type": "Jeep Rentals",
+            "content":[
+                {
+                    "rentalType":"Jeep Wrangler - 4 door with a/c",
+                    "img":"jeep_wrangler_4_wikimedia",
+                    "maxPersons":5,
+                    "reservation":{
+                        "halfDay":70,
+                        "fullDay":100
+                    },
+                    "walkIn":{
+                        "halfDay":85,
+                        "fullDay":125
+                    }
+                },
+                {
+                    "rentalType":"Jeep Wrangler - 2 door",
+                    "img":"jeep_wrangler_2_wikimedia",
+                    "maxPersons":4,
+                    "reservation":{
+                        "halfDay":60,
+                        "fullDay":85
+                    },
+                    "walkIn":{
+                        "halfDay":70,
+                        "fullDay":90
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -538,8 +538,7 @@ nav {
   border-radius: 4px; }
 
 .btn_block {
-  display: block;
-  width: 100%; }
+  display: block; }
 
 .btn_secondary {
   background-color: #41ead4;
@@ -615,7 +614,8 @@ nav {
       position: relative;
       z-index: 2; }
     .rentals_summary .summary_block .btn {
-      padding: 14px 20px; }
+      padding: 14px 20px;
+      text-align: center; }
   .rentals_summary .inner_summary_block {
     padding: 30px; }
     .rentals_summary .inner_summary_block span {
@@ -672,6 +672,103 @@ nav {
 
 footer {
   background-color: #41ead4; }
+
+.table_price {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  margin: 0 auto 10px auto; }
+  .table_price th, .table_price td {
+    border: 1px solid #f87060;
+    padding: 8px 15px; }
+  .table_price th {
+    color: #f87060; }
+  .table_price td {
+    color: #2b59c3; }
+
+.rental_container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column; }
+  .rental_container > div {
+    width: 100%;
+    text-align: center; }
+    .rental_container > div img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover; }
+  .rental_container > div:nth-child(2) {
+    padding-top: 20px; }
+
+#rentals .rental_header {
+  margin-left: 15px; }
+#rentals h3 {
+  text-align: center;
+  color: #2b59c3; }
+
+.section_title {
+  text-align: center;
+  font-size: 2rem; }
+
+.weather_attribution {
+  margin-top: 5px;
+  text-align: center;
+  font-size: .9em; }
+
+#reservation_form .form_group {
+  display: flex;
+  flex-direction: column; }
+#reservation_form fieldset {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #2b59c3; }
+  #reservation_form fieldset legend {
+    padding: 0 10px;
+    color: #2b59c3; }
+  #reservation_form fieldset .top_label {
+    width: 100%;
+    padding: 3px 3px;
+    display: block;
+    margin-bottom: 15px; }
+    #reservation_form fieldset .top_label input, #reservation_form fieldset .top_label select {
+      width: 100%;
+      margin-top: 5px;
+      padding: 0;
+      box-sizing: border-box;
+      line-height: 2em;
+      height: 2em;
+      border: 1px solid #000000; }
+    #reservation_form fieldset .top_label input:required, #reservation_form fieldset .top_label input:required:focus {
+      border-left: 6px solid #f87060; }
+    #reservation_form fieldset .top_label input:required:valid, #reservation_form fieldset .top_label input:required:focus:valid {
+      border-left: 6px solid #2b59c3; }
+  #reservation_form fieldset .top_label100 {
+    width: 100%;
+    padding: 3px 3px;
+    display: block;
+    margin-bottom: 15px; }
+    #reservation_form fieldset .top_label100 textarea {
+      width: 100%;
+      margin-top: 5px;
+      box-sizing: border-box; }
+#reservation_form .submit_container {
+  text-align: center;
+  margin: 20px 0; }
+  #reservation_form .submit_container .btn {
+    padding: 10px 30px; }
+
+.thanks_section {
+  padding-left: 20px;
+  padding-right: 20px; }
+  .thanks_section ul li {
+    margin-bottom: 10px;
+    font-weight: bold; }
+    .thanks_section ul li span {
+      font-weight: normal;
+      display: block; }
+  .thanks_section .btn_container {
+    text-align: center; }
 
 @media only screen and (min-width: 32.5em) {
   header {
@@ -737,7 +834,28 @@ footer {
     .footer_info .column {
       padding: 20px 50px 50px 50px;
       text-align: left;
-      width: 50%; } }
+      width: 50%; }
+
+  .rental_container {
+    flex-direction: row; }
+    .rental_container > div {
+      width: 50%;
+      text-align: center; }
+      .rental_container > div img {
+        width: 100%;
+        height: 250px; }
+    .rental_container > div:nth-child(2) {
+      padding-top: 20px; }
+
+  #reservation_form .form_group {
+    flex-direction: row; }
+  #reservation_form fieldset .top_label {
+    width: 50%; }
+
+  .thanks_section ul li span {
+    display: initial; }
+  .thanks_section .btn_container {
+    text-align: left; } }
 /* end of media query */
 @media only screen and (min-width: 60em) {
   .img_banner_home {

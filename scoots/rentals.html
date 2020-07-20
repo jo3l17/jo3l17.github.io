@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joel Valdez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/scoots_icon.ico">
+    <title>Rentals | Scoots</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Rentals | Scoots">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <picture>
+                <source media="(max-width: 32.5em)" srcset="images/logo_scoots_to_icon.png">
+                <img src="images/logo_scoots_web.png" class="site_logo" alt="scoots logo">
+            </picture>
+        </a>
+        <section>
+            <h1>Scoots</h1>
+            <span>easy rent, easy life</span>
+        </section>
+    </header>
+    <nav>
+        <div class="desktop-nav-container">
+            <div class="nav-menu-container">
+                <span class="nav-menu-item">
+                    <a href="index.html">Home</a>
+                </span>
+                <span class="nav-menu-item">
+                    <a class="active" href="rentals.html">
+                        Rentals
+                    </a>
+                </span>
+                <span class="nav-menu-item">
+                    <a href="reservations.html">
+                        Reservations
+                    </a>
+                </span>
+                <span class="nav-menu-item">
+                    <a href="tours.html">
+                        Tours
+                    </a>
+                </span>
+                <span class="nav-menu-item">
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </span>
+            </div>
+
+            <span class="hamburger-btn">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+
+        <div class="collapsed-nav-container"></div>
+    </nav>
+    <main>
+        <section>
+            <h2 class="section_title">Avaliable Rentals</h2>
+            <div id="rentals">
+                <div id="honda_motor_scooters"></div>
+                <div id="atv_side_by_side"></div>
+                <div id="jeep_rentals"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_info">
+            <div class="column">
+                <h3>
+                    About Us
+                </h3>
+                <ul class="about_us">
+                    <li>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i> Calle Zaramullo 8, Huertos Familiares, 77673 San
+                            Miguel de Cozumel, Q.R., México
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-phone"></i> +52 987 456 5467
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-envelope"></i> scoots@info.com
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>
+                    Social Links
+                </h3>
+                <ul class="social_links">
+                    <li>
+                        <a href="https://facebook.com">
+                            <i class="fab fa-facebook-f fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_last">
+            2020 | Scoots&#174;
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Noto Sans',
+                    'Nunito',
+                    'Rubik'
+                ]
+            }
+        });
+    </script>
+    <script src="js/rentals.js"></script>
+</body>
+</html>
