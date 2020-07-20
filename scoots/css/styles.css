@@ -412,10 +412,10 @@ template {
 body {
   margin-left: auto;
   margin-right: auto;
-  font-family: Noto sans SC , 'Courier New', Courier, monospace; }
+  font-family: Noto sans SC , Tahoma, Geneva, sans-serif; }
 
 a {
-  font-family: Noto sans SC , 'Courier New', Courier, monospace;
+  font-family: Noto sans SC , Tahoma, Geneva, sans-serif;
   text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
