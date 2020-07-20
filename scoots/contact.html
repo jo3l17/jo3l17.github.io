@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div id="sended">Your message have been sended, Thank you for contacting us</div>
     <header>
         <a href="index.html">
             <picture>
@@ -60,6 +61,99 @@
 
         <div class="collapsed-nav-container"></div>
     </nav>
+    <main>
+        <section class="inner_section">
+            <h2 class="section_title">Contact</h2>
+            <div class="reservarion_requirements">
+                <h3>Rental information</h3>
+                <ul>
+                    <li>
+                        A $50 security deposit is required to confirm reservations.
+                    </li>
+                    <li>
+                        A valid drivers license is required in hand at time of rental.
+                    </li>
+                    <li>
+                        No one under 12 years of age are allowed to ride on the scooters.
+                    </li>
+                    <li>
+                        Fuel charge not included.
+                    </li>
+                    <li>
+                        Unlimited mileage.
+                    </li>
+                    <li>
+                        Liability insurance is free of charge.
+                    </li>
+                    <li>
+                        Reservations rate requires 24 hour prior notification.
+                    </li>
+                    <li>
+                        Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.
+                    </li>
+                    <li>
+                        Payment via Google Pay, cash, credit card, debit card, or PayPal.
+                    </li>
+                    <li>
+                        Rentals may be returned to either location.
+                    </li>
+                </ul>
+            </div>
+            <div class="contact_info">
+                <h3>Contact information</h3>
+                <ul class="about_us">
+                    <li>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i> Calle Zaramullo 8, Huertos Familiares, 77673 San
+                            Miguel de Cozumel, Q.R., México
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i> Calle 1 Sur, Centro, 77600 San Miguel de Cozumel,
+                            Q.R., México
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-phone"></i> +52 987 456 5467
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fas fa-envelope"></i> scoots@info.com
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div id="map"></div>
+        </section>
+        <section>
+            <form id="contact_form" action="#" onsubmit="sendEvent(event)">
+                <fieldset>
+                    <legend class="legend_centered">Contact Us</legend>
+                    <div class="form_group">
+                        <label class="top_label" for="name">
+                            Name:
+                            <input type="text" name="name" id="name" required pattern="^[a-zA-Z\s.-]{3,}$"
+                                title="Please write at least 3 characters">
+                        </label>
+                        <label class="top_label" for="email">
+                            Email:
+                            <input type="email" name="email" id="email" required title="invalid email">
+                        </label>
+                    </div>
+                    <label class="top_label100" for="comments">
+                        Comments:
+                        <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                    </label>
+                    <div class="submit_container">
+                        <button class="btn btn_secondary" type="submit">Contact Us</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
     <footer>
         <div class="footer_info">
             <div class="column">
@@ -113,10 +207,14 @@
                 </ul>
             </div>
         </div>
+        <div class="resources">
+            <a href="resources.html">Resources</a>
+        </div>
         <div class="footer_last">
-            2020 | Scoots&#174;
+            2020 | Joel | Scoots&#174; | <span id="lastModified"></span>
         </div>
     </footer>
+    <script src="js/lastModified.js"></script>
     <script src="js/navbar.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
@@ -130,6 +228,10 @@
             }
         });
     </script>
+    <script src="js/contact.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzh23_Ka5AqoOOaFHq3cArxIf2mCC_MLg&callback=initMap">
+        </script>
 </body>
 
 </html>

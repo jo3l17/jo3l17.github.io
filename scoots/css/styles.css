@@ -714,24 +714,24 @@ footer {
   text-align: center;
   font-size: .9em; }
 
-#reservation_form .form_group {
+#reservation_form .form_group, #contact_form .form_group {
   display: flex;
   flex-direction: column; }
-#reservation_form fieldset {
+#reservation_form fieldset, #contact_form fieldset {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #2b59c3; }
-  #reservation_form fieldset legend {
+  #reservation_form fieldset legend, #contact_form fieldset legend {
     padding: 0 10px;
     color: #2b59c3; }
-  #reservation_form fieldset .top_label {
+  #reservation_form fieldset .top_label, #contact_form fieldset .top_label {
     width: 100%;
     padding: 3px 3px;
     display: block;
     margin-bottom: 15px; }
-    #reservation_form fieldset .top_label input, #reservation_form fieldset .top_label select {
+    #reservation_form fieldset .top_label input, #reservation_form fieldset .top_label select, #contact_form fieldset .top_label input, #contact_form fieldset .top_label select {
       width: 100%;
       margin-top: 5px;
       padding: 0;
@@ -739,24 +739,29 @@ footer {
       line-height: 2em;
       height: 2em;
       border: 1px solid #000000; }
-    #reservation_form fieldset .top_label input:required, #reservation_form fieldset .top_label input:required:focus {
+    #reservation_form fieldset .top_label input:required, #reservation_form fieldset .top_label input:required:focus, #contact_form fieldset .top_label input:required, #contact_form fieldset .top_label input:required:focus {
       border-left: 6px solid #f87060; }
-    #reservation_form fieldset .top_label input:required:valid, #reservation_form fieldset .top_label input:required:focus:valid {
+    #reservation_form fieldset .top_label input:required:valid, #reservation_form fieldset .top_label input:required:focus:valid, #contact_form fieldset .top_label input:required:valid, #contact_form fieldset .top_label input:required:focus:valid {
       border-left: 6px solid #2b59c3; }
-  #reservation_form fieldset .top_label100 {
+  #reservation_form fieldset .top_label100, #contact_form fieldset .top_label100 {
     width: 100%;
     padding: 3px 3px;
     display: block;
     margin-bottom: 15px; }
-    #reservation_form fieldset .top_label100 textarea {
+    #reservation_form fieldset .top_label100 textarea, #contact_form fieldset .top_label100 textarea {
       width: 100%;
       margin-top: 5px;
       box-sizing: border-box; }
-#reservation_form .submit_container {
+#reservation_form .submit_container, #contact_form .submit_container {
   text-align: center;
   margin: 20px 0; }
-  #reservation_form .submit_container .btn {
+  #reservation_form .submit_container .btn, #contact_form .submit_container .btn {
     padding: 10px 30px; }
+#reservation_form .legend_centered, #contact_form .legend_centered {
+  text-align: center;
+  font-size: 1.5em;
+  padding-left: 20px;
+  padding-right: 20px; }
 
 .thanks_section {
   padding-left: 20px;
@@ -769,6 +774,38 @@ footer {
       display: block; }
   .thanks_section .btn_container {
     text-align: center; }
+
+.tour_block {
+  display: flex;
+  flex-direction: column; }
+  .tour_block > div {
+    padding: 20px; }
+    .tour_block > div img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      object-position: center; }
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey; }
+
+.contact_info ul {
+  list-style: none; }
+  .contact_info ul li {
+    margin-bottom: 10px; }
+
+.resources {
+  text-align: center;
+  padding-bottom: 5px; }
+
+#sended {
+  text-align: center;
+  display: none;
+  background-color: #41ead4;
+  padding-bottom: 10px;
+  padding-top: 10px; }
 
 @media only screen and (min-width: 32.5em) {
   header {
@@ -847,15 +884,23 @@ footer {
     .rental_container > div:nth-child(2) {
       padding-top: 20px; }
 
-  #reservation_form .form_group {
+  #reservation_form .form_group, #contact_form .form_group {
     flex-direction: row; }
-  #reservation_form fieldset .top_label {
+  #reservation_form fieldset .top_label, #contact_form fieldset .top_label {
     width: 50%; }
 
   .thanks_section ul li span {
     display: initial; }
   .thanks_section .btn_container {
-    text-align: left; } }
+    text-align: left; }
+
+  .tour_block {
+    flex-direction: row; }
+    .tour_block > div {
+      width: 50%; }
+
+  .image_left {
+    flex-direction: row-reverse; } }
 /* end of media query */
 @media only screen and (min-width: 60em) {
   .img_banner_home {

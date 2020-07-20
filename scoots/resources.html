@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Joel Valdez">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/scoots_icon.ico">
-    <title>Thanks | Scoots</title>
+    <title>Resources | Scoots</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Thanks | Scoots">
+    <meta name="description" content="Resources | Scoots">
 </head>
-
 <body>
     <header>
         <a href="index.html">
@@ -31,7 +29,7 @@
                     <a href="index.html">Home</a>
                 </span>
                 <span class="nav-menu-item">
-                    <a href="rentals.html">
+                    <a class="active" href="rentals.html">
                         Rentals
                     </a>
                 </span>
@@ -61,27 +59,31 @@
         <div class="collapsed-nav-container"></div>
     </nav>
     <main>
-        <section class="inner_section thanks_section">
-            <h2 class="section_title">
-                Thanks
-            </h2>
+        <section>
+            <h2 class="section_title">Resources Links</h2>
             <div>
-                <p> Thank you <span id="Name"></span> for make a reservation, we hope you enjoy you experience with us</p>
-            </div>
-            <div>
-                <p>Here is a summary of your reservation, please check it before continue</p>
-            </div>
-            <ul>
-                <li>Name : <span id="fullName"></span></li>
-                <li>Email : <span id="email"></span></li>
-                <li>Phone : <span id="phone"></span></li>
-                <li>Period: <span id="period"></span></li>
-                <li>Rental Type : <span id="rentalType"></span></li>
-                <li>State or Country : <span id="HomeStateCountry"></span></li>
-                <li>Date of reservation : <span id="date"></span></li>
-            </ul>
-            <div class="btn_container">
-                <a href="#" class="btn btn_primary">Proceed to payment</a>
+                <h3>
+                    Images
+                </h3>
+                <ul>
+                    <li>
+                        <a href="https://unsplash.com/">Unsplash</a>
+                    </li>
+                    <li>
+                        <a href="https://www.wikimedia.org/">WikiMedia</a>
+                    </li>
+                    <li>
+                        <a href="https://www.wikipedia.org/">Wikipedia</a>
+                    </li>
+                </ul>
+                <h3>
+                    weather
+                </h3>
+                <ul>
+                    <li>
+                        <a href="https://openweathermap.org/">Open Weather</a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -159,7 +161,5 @@
             }
         });
     </script>
-    <script src="js/thanks.js"></script>
 </body>
-
 </html>

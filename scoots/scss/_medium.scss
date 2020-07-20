@@ -86,7 +86,7 @@ header{
         padding-top:20px ;
     }
 }
-#reservation_form{
+#reservation_form, #contact_form{
     .form_group{
         flex-direction: row;
     }
@@ -103,4 +103,13 @@ header{
     .btn_container{
         text-align: left;
     }
+}
+.tour_block{
+    flex-direction: row;
+    >div{
+        width: 50%;
+    }
+}
+.image_left{
+    flex-direction: row-reverse;
 }
